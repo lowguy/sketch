@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>素描 - 闪电素描!</title>
+    <meta name="author" content="lowguy" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./src/style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/style/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>素描
+                <small>闪电素描</small>
+                <a class="btn link-button" title="more info" href="http://www.alloyteam.com/2012/07/convert-picture-to-sketch-by-canvas/" target="_blank">More info »</a>
+                <a class="btn link-button" title="view on github" href="https://github.com/iazrael/sketching" target="_blank">View on GitHub</a>
+            </h1>
+        </div>
+        <div class="toolbar">
+            <form class="well form-inline">
+                <label>Sample size: 
+                    <input id="strength" type="number" min="1" value="5" class="input-small" placeholder="5">
+                </label>
+                <!-- <label> Canvas szie: </label>
+                <input id="canvasWidth" type="text" class="input-mini" placeholder="max:640">
+                X
+                <input id="canvasHeight" type="text" class="input-mini" placeholder="max:480"> -->
+                <button id="action" type="button" class="btn " disabled>Apply</button>
+                <a id="download" download="sketch.png" target="_blank" title="download sketch" class="btn btn-success download-button" href="javascript: void(0);"><small class="icon-download icon-white"></small> Download</a>
+            </form>
+            <div class="alert alert-info"> drop a picture to the canvas to start/restart sketching.</div>
+        </div>
+        <div class="body grid">
+            <canvas id="canvas" width="480" height="360"></canvas>
+            <div id="dropper" class="dropper" title="drop a new picture to replace the old one.">
+                <h2>drop a picture to here.</h2>
+            </div>
+        </div>
+        <p></p>
+        <div class="alert">
+          <strong>Notice:</strong> Sketching is only work on modern browsers, such as Chrome(recommend), Firefox, Opera(12+), IE10+(not tested).
+        </div>
+<p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://www.AlloyTeam.com/" target="_blank">Tencent AlloyTeam</a>. Design by <a href="http://imatlas.com" title="imAtlas">imAtlas</a>. All Rights Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32718600-6']);
+        _gaq.push(['_trackPageview']);
+    </script>
+    <script type="text/javascript" src="http://static.imatlas.com/google/ga.js"></script>
+    <script type="text/javascript" src="./src/js/sketching.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+</html>

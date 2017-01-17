@@ -1,0 +1,56 @@
+.container{
+    min-width: 640px;
+}
+.body{
+    position: relative;
+    border: 1px solid #C3C3C3;
+    background: #e9e9e9;
+    overflow: auto;
+    max-height: 500px;
+    min-height: 200px;
+}
+.body canvas{
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+.body .dropper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.body .dropper h2{
+    margin: 10% auto 0;
+    text-align: center;
+}
+.link-button{
+    float: right;
+    font-weight: normal;
+    margin: 0 5px;
+}
+.download-button{
+    float: right;
+}
+.grid{
+    background-image: -webkit-linear-gradient(top, transparent 39px, rgba(200, 200, 200, 0.5) 40px), -webkit-linear-gradient(left, transparent 39px, rgba(200, 200, 200, 0.5) 40px)
+    ;
+    background-image: -moz-linear-gradient(top, transparent 39px, rgba(200, 200, 200, 0.5) 40px), -moz-linear-gradient(left, transparent 39px, rgba(200, 200, 200, 0.5) 40px)
+    ;
+    background-image: -o-linear-gradient(top, transparent 39px, rgba(200, 200, 200, 0.5) 40px), -o-linear-gradient(left, transparent 39px, rgba(200, 200, 200, 0.5) 40px)
+    ;
+    background-image: -ms-linear-gradient(top, transparent 39px, rgba(200, 200, 200, 0.5) 40px), -ms-linear-gradient(left, transparent 39px, rgba(200, 200, 200, 0.5) 40px)
+    ;
+    background-image:
+    linear-gradient(top, transparent 39px, rgba(200, 200, 200, 0.5) 40px), 
+    linear-gradient(left, transparent 39px, rgba(200, 200, 200, 0.5) 40px)
+    ;
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+.copyright{
+    text-align: center;
+}
