@@ -5,7 +5,6 @@
      * Y = 0.299R + 0.587G + 0.114B
      * @param  {Array} pixes pix array
      * @return {Array}
-     * @link {http://www.61ic.com/Article/DaVinci/DM64X/200804/19645.html}
      */
     function discolor(pixes) {
         var grayscale;

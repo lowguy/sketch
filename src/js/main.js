@@ -52,6 +52,7 @@
         }, 0);
     }
 
+
     var canvas = $('canvas'),
         action = $('action'),
         download = $('download'),
